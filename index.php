@@ -4,7 +4,7 @@ Definire la classe Magazzino e la classe Prodotto nel seguente modo:
 
 Magazzino: definire gli attributi per nome, location e prodotti contenuti (array); definire inoltre costruttore con solo nome e location obbligatori
 
-Prodotto: definire gli attributi per nome, peso e prezzoGenerare alcune istanze di ogni classe, hai fini di test e per meglio comprendere i concetti -->
+Prodotto: definire gli attributi per nome, peso e prezzo. Generare alcune istanze di ogni classe, ai fini di test e per meglio comprendere i concetti -->
 
 <!DOCTYPE html>
 <html lang="en">
