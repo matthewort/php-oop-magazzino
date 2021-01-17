@@ -19,7 +19,7 @@ Prodotto: definire gli attributi per nome, peso e prezzo. Generare alcune istanz
         class Magazzino {  //"ricetta" magazzino
             public $nome;  //predispongo le variabili nella "ricetta"
             public $location;
-            public $prodotti;
+            public $prodotti = [];
 
             public function __construct($nome, $location) {  //costruttore, usato per valorizzare quegli attributi che caratterizzano l'istanza
                 $this -> nome = $nome;  //$this vuol dire "mi riferisco agli attributi sopra", nome dopo la freccia senza il $ (dopo la freccia non va mai il $) corrisponde al $nome negli attributi sopra, infine $nome si riferisce al $nome dentro il construct
@@ -27,8 +27,23 @@ Prodotto: definire gli attributi per nome, peso e prezzo. Generare alcune istanz
             }
         }
 
-        $magazzino = new Magazzino("Marco", "Mantova");  //istanza
+        $magazzino = new Magazzino("Duck Logistics", "Mantova"); //istanza 
         var_dump($magazzino);
+
+        class Prodotto {
+            public $nome;  
+            public $peso;
+            public $prezzo;
+
+            public function __construct($nome, $peso, $prezzo) {  
+                $this -> nome = $nome;  
+                $this -> peso = $peso;
+                $this -> prezzo = $prezzo;
+            }
+        }
+
+        $prodotto = new Prodotto("Duck toy", "12g", "50 euro"); //istanza 
+        var_dump($prodotto);
     ?>
 
 
